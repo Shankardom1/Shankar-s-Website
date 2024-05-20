@@ -1,350 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("E7XO4VHslXpW5YyW6"); // Replace with your EmailJS user ID
-        })();
-    </script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#home" class="logo"> Shankar <span>Hore</span></a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#education">Education</a>
-       <a href="#portfolio">Portfolio</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <section class="home fade-in" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm <span>Shankar</span></h1>
-        <h3 class="text-animation">I'm <span></span></h3>
-
-        <p>Welcome to my website, Have a look around, and enjoy your stay!</p>
-
-        <div class="social-icons">
-          <a href="https://github.com/Shankardom1">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/shankar-hore/">
-            <i class="bx bxl-linkedin-square"></i>
-          </a>
-          <a href="https://dribbble.com/Shankardom">
-            <i class="bx bxl-dribbble"></i>
-          </a>
-          <a href="https://www.behance.net/ShankarHore">
-            <i class="bx bxl-behance"></i>
-          </a>
-        </div>
-
-        <div class="btn-group">
-          <a href="#contact" class="btn">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("E7XO4VHslXpW5YyW6"); // Replace with your EmailJS user ID
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo"> Shankar <span>Hore</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="home fade-in" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Shankar</span></h1>
+      <h3 class="text-animation">I'm <span></span></h3>
+      <p>Welcome to my website, Have a look around, and enjoy your stay!</p>
+      <div class="social-icons">
+        <a href="https://github.com/Shankardom1"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/shankar-hore/"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="https://dribbble.com/Shankardom"><i class="bx bxl-dribbble"></i></a>
+        <a href="https://www.behance.net/ShankarHore"><i class="bx bxl-behance"></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="image-container">
+        <img src="image.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="education fade-in" id="education">
+    <h2>My <span>Education</span></h2>
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">(Sep <span class="date-numbers">2009</span> – Aug <span class="date-numbers">2014</span>)</div>
+        <div class="timeline-content">
+          <h3>High School (Salendine Nook Academy)</h3>
+          <strong style="color: #00ff51;">GCSE's:</strong> 10x A-C including Mathematics and English <strong>(A)</strong><br>
+          <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
+          <ul class="no-bullets">
+            <li>Freelance editor for Maker Studio.</li>
+          </ul>
         </div>
       </div>
-
-      <div class="home-img">
-        <div class="image-container">
-          <img src="image.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="education fade-in" id="education">
-      <h2>My <span>Education</span></h2>
-
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">(Sep <span class="date-numbers">2009</span> – Aug <span class="date-numbers">2014</span>)</div>
-
-          <div class="timeline-content">
-            <h3>High School (Salendine Nook Academy)</h3>
-            <strong style="color: #00ff51;">GCSE's:</strong> 10x A-C including Mathematics and English <strong>(A)</strong><br>
-            <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">(Aug <span class="date-numbers">2016</span> – Aug <span class="date-numbers">2018</span>)</div>
+        <div class="timeline-content">
+          <h3>A-Levels (Huddersfield New College)</h3>
+          <p>
+            <strong style="color: #00ff51;">A levels:</strong> Economics <strong>(A)</strong><br>
+            <strong style="color: #00ff51;">BTECS:</strong> Software Development <strong>(D*)</strong></strong> Law <strong> (D*)</strong><br>
+            <strong class="work-roles-label" style="color: #00ff51;">Achievements:</strong>
             <ul class="no-bullets">
-              <li>Freelance editor for Maker Studio.</li>
-              </ul>
+              <li>HNC: Economics Student of the year award (2018)</li>
+              <li>HNC: Software Development Most improved student (2018)</li>
+            </ul>
           </p>
         </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">(Aug <span class="date-numbers">2016</span> – Aug <span class="date-numbers">2018</span>)</div>
-
-          <div class="timeline-content">
-            <h3>A-Levels (Huddersfield New College)</h3>
-            <p>
-              <strong style="color: #00ff51;">A levels:</strong> Economics <strong>(A)</strong><br>
-              <strong style="color: #00ff51;">BTECS:</strong> Software Development <strong>(D*)</strong></strong> Law <strong> (D*)</strong><br>
-             <strong class="work-roles-label" style="color: #00ff51;">Achievements:</strong>
-              <ul class="no-bullets">
-                <li>HNC: Economics Student of the year award (2018)</li>
-                <li>HNC: Software Development Most improved student (2018)</li>
-                </ul>
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">(Oct <span class="date-numbers">2018</span> – Jun <span class="date-numbers">2021</span>)</div>
-          <div class="timeline-content">
-            <h3>Lancaster University BSc.</h3>
-            <p>
-              <strong style="color: #00ff51;">Degree:</strong> BSc Management and Information Technology <strong>(2:1)</strong><br>
-              <strong style="color: #00ff51;">Key Modules:</strong> Software Development, Java and C+ Coding Principles, Project Management<br>
-              <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
-              <ul class="no-bullets">
-                <li>Social Media Manager and Technology Advisor. (1 yr)</li>
-                <li>Socials Event and Technology Advisor. (1 yr)</li>
-                <li>University Management Tutor. (1 yr)</li>
-                <li>Academic Representative for Business Management. (2 yrs)</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">(Sep <span class="date-numbers">2021</span> – Sep <span class="date-numbers">2022</span>)</div>
-
-          <div class="timeline-content">
-            <h3>Lancaster University MSc.</h3>
-            <p>
-              <strong style="color: #00ff51;">Degree:</strong> Masters in Business Management<strong> (Merit)</strong><br>
-              <strong style="color: #00ff51;">Key Modules:</strong> Digital Transformation, Project Management consultation, Accounting, Dissertation (Distinction).<br>
-              <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
-              <ul class="no-bullets">
-                <li>Academic Representative for Masters Business Management.</li>
-                <li>Freelance Graphics Designer. </li>
-                              </ul>
-            </p>
-          </div>
-        </div>
-        </div>
-
-      <!-- Add a container for the button -->
-      <div class="button-container">
-        <a href="Shankar Hore CV.docx" class="btn" download>Download my CV!</a>
       </div>
-    </section>
-
-    <section class="portfolio fade-in" id="portfolio">
-      <h2>My <span>Portfolio</span></h2>
-      <div class="portfolio-items">
-        <div class="portfolio-item">
-          <img src="portfolio1.jpg" alt="Portfolio Image 1" class="portfolio-img" />
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">(Oct <span class="date-numbers">2018</span> – Jun <span class="date-numbers">2021</span>)</div>
+        <div class="timeline-content">
+          <h3>Lancaster University BSc.</h3>
+          <p>
+            <strong style="color: #00ff51;">Degree:</strong> BSc Management and Information Technology <strong>(2:1)</strong><br>
+            <strong style="color: #00ff51;">Key Modules:</strong> Software Development, Java and C+ Coding Principles, Project Management<br>
+            <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
+            <ul class="no-bullets">
+              <li>Social Media Manager and Technology Advisor. (1 yr)</li>
+              <li>Socials Event and Technology Advisor. (1 yr)</li>
+              <li>University Management Tutor. (1 yr)</li>
+              <li>Academic Representative for Business Management. (2 yrs)</li>
+            </ul>
+          </p>
         </div>
-        <div class="portfolio-item">
-          <img src="portfolio2.jpg" alt="Portfolio Image 2" class="portfolio-img" />
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">(Sep <span class="date-numbers">2021</span> – Sep <span class="date-numbers">2022</span>)</div>
+        <div class="timeline-content">
+          <h3>Lancaster University MSc.</h3>
+          <p>
+            <strong style="color: #00ff51;">Degree:</strong> Masters in Business Management<strong> (Merit)</strong><br>
+            <strong style="color: #00ff51;">Key Modules:</strong> Digital Transformation, Project Management consultation, Accounting, Dissertation (Distinction).<br>
+            <strong class="work-roles-label" style="color: #00ff51;">Work Roles during this time:</strong>
+            <ul class="no-bullets">
+              <li>Academic Representative for Masters Business Management.</li>
+              <li>Freelance Graphics Designer. </li>
+            </ul>
+          </p>
         </div>
-        <div class="portfolio-item">
-          <img src="portfolio3.jpg" alt="Portfolio Image 3" class="portfolio-img" />
-        </div>
-        <div class="portfolio-item">
-          <img src="portfolio4.jpg" alt="Portfolio Image 4" class="portfolio-img" />
-        </div>
-        <div class="portfolio-item">
-          <video controls class="portfolio-video">
-            <source src="portfolio5.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-                <div class="portfolio-item">
-          <img src="portfolio9.jpg" alt="Portfolio Image 9" class="portfolio-img" />
-        </div>
-        <div class="portfolio-item">
-          <video controls class="portfolio-video">
-            <source src="portfolio6.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="portfolio-item">
-          <img src="portfolio7.jpg" alt="Portfolio Image 7" class="portfolio-img" />
-        </div>
-        <div class="portfolio-item">
-          <img src="portfolio8.jpg" alt="Portfolio Image 8" class="portfolio-img" />
-        </div>
-             </div>
-              <h3 class="subheading">Check out my <span class="highlight">dribbble</span> & <span class="highlight2">Behance</span>!</h3>
-    <div class="social-icons">
-        <a href="https://dribbble.com/Shankardom">
-      <i class="bx bxl-dribbble"></i>
-    </a>
-    <a href="https://www.behance.net/ShankarHore">
-      <i class="bx bxl-behance"></i>
-    </a>
-   
-</div>
-
-    </section>
-    
-    <!-- Fullscreen Image Overlay -->
-    <div id="image-overlay" class="image-overlay">
-      <span class="close-btn">&times;</span>
-      <img class="overlay-img" />
+      </div>
     </div>
-    </section>
-
-    <section class="skills fade-in" id="skills">
-      <h2 class="heading">Skills</h2>
-
-      <div class="skills-container">
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class="bx bx-devices"></i>
-            <h4>Coding</h4>
-            <p>
-              As an ambitious IT graduate, I am dedicated to enhancing my coding abilities and expanding my knowledge in the tech industry. I have practical experience with several programming languages, including Java, C++, and HTML/CSS. My education at the University of Lancaster, complemented by Tech-Industry Gold accreditation, has provided me with a strong foundation in software development and digital transformation practices. Currently, I am further advancing my skills through certifications in Microsoft Azure and JavaScript.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class="bx bx-game"></i>
-            <h4>Graphics Design</h4>
-            <p>As a freelance graphics designer with passion and years of experience for within graphics design, I have developed a robust skill set in creating visually appealing and engaging digital content. I am self-taught in Adobe Photoshop, Illustrator, After Effects, and Premiere, enabling me to produce high-quality graphics and multimedia projects that can be seamlessly integrated. Furthermore, my role as a Social Media Manager at the University of Lancaster allowed me to apply these design skills effectively in an official capacity, resulting in increased engagement and follower growth.</p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skills-info">
-            <i class="bx bxl-instagram"></i>
-            <h4>Social Media Management</h4>
-            <p> I have a proven track record of creating visually stunning media graphics and engaging, informative posts that significantly boost online presence and audience engagement. At Lancaster University, my strategic content creation led to a remarkable 20% increase in engagement and a 15% growth in followers within just five months.Additionally, I have experience leveraging social media platforms to engage and grow a dedicated following of over 5900+. My ability to craft compelling content and foster collaboration has consistently driven measurable results, and I am enthusiastic about bringing these skills to a new role where I can further enhance brand visibility and audience engagement.</p>
-          </div>
+    <div class="button-container">
+      <a href="Shankar Hore CV.docx" class="btn" download>Download my CV!</a>
+    </div>
+  </section>
+  <section class="portfolio fade-in" id="portfolio">
+    <h2>My <span>Portfolio</span></h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="portfolio1.jpg" alt="Portfolio Image 1" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio2.jpg" alt="Portfolio Image 2" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio3.jpg" alt="Portfolio Image 3" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio4.jpg" alt="Portfolio Image 4" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <video controls class="portfolio-video">
+          <source src="portfolio5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio9.jpg" alt="Portfolio Image 9" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <video controls class="portfolio-video">
+          <source src="portfolio6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio7.jpg" alt="Portfolio Image 7" class="portfolio-img" />
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio8.jpg" alt="Portfolio Image 8" class="portfolio-img" />
+      </div>
+    </div>
+    <h3 class="subheading">Check out my <span class="highlight">dribbble</span> & <span class="highlight2">Behance</span>!</h3>
+    <div class="social-icons">
+      <a href="https://dribbble.com/Shankardom"><i class="bx bxl-dribbble"></i></a>
+      <a href="https://www.behance.net/ShankarHore"><i class="bx bxl-behance"></i></a>
+    </div>
+  </section>
+  <div id="image-overlay" class="image-overlay">
+    <span class="close-btn">&times;</span>
+    <img class="overlay-img" />
+  </div>
+  <section class="skills fade-in" id="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="skills-container">
+      <div class="skills-box">
+        <div class="skills-info">
+          <i class="bx bx-devices"></i>
+          <h4>Coding</h4>
+          <p>As an ambitious IT graduate, I am dedicated to enhancing my coding abilities and expanding my knowledge in the tech industry. I have practical experience with several programming languages, including Java, C++, and HTML/CSS. My education at the University of Lancaster, complemented by Tech-Industry Gold accreditation, has provided me with a strong foundation in software development and digital transformation practices. Currently, I am further advancing my skills through certifications in Microsoft Azure and JavaScript.</p>
         </div>
       </div>
-    </section>
-    <section class="contact fade-in" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form id="contact-form">
-        <div class="input-group">
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-          </div>
-          <div class="input-box">
-            <input type="tel" name="phone" placeholder="Phone Number" required />
-            <input type="text" name="subject" placeholder="Subject" required />
-          </div>
+      <div class="skills-box">
+        <div class="skills-info">
+          <i class="bx bx-game"></i>
+          <h4>Graphics Design</h4>
+          <p>As a freelance graphics designer with passion and years of experience for within graphics design, I have developed a robust skill set in creating visually appealing and engaging digital content. I am self-taught in Adobe Photoshop, Illustrator, After Effects, and Premiere, enabling me to produce high-quality graphics and multimedia projects that can be seamlessly integrated. Furthermore, my role as a Social Media Manager at the University of Lancaster allowed me to apply these design skills effectively in an official capacity, resulting in increased engagement and follower growth.</p>
         </div>
-        <div class="input-group-2">
-          <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-          <input type="submit" value="Send Message" class="btn" />
-        </div>
-      </form>
-      <div id="notification" class="notification">Message Sent!</div>
-    </section>
-
-      <section class="faq fade-in" id="faq">
-        <div class="faq-header">
-          <h2>
-            Frequently Asked <span>Questions</span>
-          </h2>
-          <button id="toggle-faq">Hide FAQ</button>
-        </div>
-        <div class="faq-container">
-          <div class="faq-item">
-            <h3 class="faq-question">Where are you based?</h3>
-            <p class="faq-answer">I am currently based in Huddersfield! But i am willing to relocate anywhere for work.</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">What services do you offer?</h3>
-            <p class="faq-answer">I offer services in graphic design, web development, and social media management. For more details, please check the Skills section.</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">What roles are you looking for?</h3>
-            <p class="faq-answer">Because of my Qualifications and Skillset, i am open to any area of work in any industry. However, I have a particular interest in Technology and Tech Management!</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">How can I contact you?</h3>
-            <p class="faq-answer">You can contact me via the contact form in the Contact section or through my LinkedIn profile linked in the footer! I hope to get back to you same day.</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">How did you make this website?</h3>
-            <p class="faq-answer">I coded this website manually using HTML, CSS and JSS. The website is open source and available in my GitRepository!</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">Are you available for freelance work?</h3>
-            <p class="faq-answer">Yes, I am available for freelance work but am preferably looking for full time employment. Please contact me to discuss your project in more detail.</p>
-          </div>
-        </div>
-      </section>
-
-    <footer class="footer">
-      <div class="social-icons">
-        <a href="https://github.com/Shankardom1">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/shankar-hore/">
-          <i class="bx bxl-linkedin-square"></i>
-        </a>
-        <a href="https://dribbble.com/Shankardom">
-          <i class="bx bxl-dribbble"></i>
-        </a>
-        <a href="https://www.behance.net/ShankarHore">
-          <i class="bx bxl-behance"></i>
-        </a>
       </div>
-      <ul class="list">
-        <li>
-          <a href="#faq" id="faq-link">FAQ</a>
+      <div class="skills-box">
+        <div class="skills-info">
+          <i class="bx bxl-instagram"></i>
+          <h4>Social Media Management</h4>
+          <p>I have a proven track record of creating visually stunning media graphics and engaging, informative posts that significantly boost online presence and audience engagement. At Lancaster University, my strategic content creation led to a remarkable 20% increase in engagement and a 15% growth in followers within just five months. Additionally, I have experience leveraging social media platforms to engage and grow a dedicated following of over 5900+. My ability to craft compelling content and foster collaboration has consistently driven measurable results, and I am enthusiastic about bringing these skills to a new role where I can further enhance brand visibility and audience engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact fade-in" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="contact-form">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="input-box">
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </div>
+    </form>
+    <div id="notification" class="notification">Message Sent!</div>
+  </section>
+  <section class="faq fade-in" id="faq">
+    <div class="faq-header">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <button id="toggle-faq">Hide FAQ</button>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3 class="faq-question">Where are you based?</h3>
+        <p class="faq-answer">I am currently based in Huddersfield! But i am willing to relocate anywhere for work.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What services do you offer?</h3>
+        <p class="faq-answer">I offer services in graphic design, web development, and social media management. For more details, please check the Skills section.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What roles are you looking for?</h3>
+        <p class="faq-answer">Because of my Qualifications and Skillset, i am open to any area of work in any industry. However, I have a particular interest in Technology and Tech Management!</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How can I contact you?</h3>
+        <p class="faq-answer">You can contact me via the contact form in the Contact section or through my LinkedIn profile linked in the footer! I hope to get back to you same day.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How did you make this website?</h3>
+        <p class="faq-answer">I coded this website manually using HTML, CSS and JSS. The website is open source and available in my GitRepository!</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Are you available for freelance work?</h3>
+        <p class="faq-answer">Yes, I am available for freelance work but am preferably looking for full time employment. Please contact me to discuss your project in more detail.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/Shankardom1"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/shankar-hore/"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="https://dribbble.com/Shankardom"><i class="bx bxl-dribbble"></i></a>
+      <a href="https://www.behance.net/ShankarHore"><i class="bx bxl-behance"></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="#faq" id="faq-link">FAQ</a></li>
+      <li><a href="#skills">Services</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#home">About Me</a></li>
+    </ul>
+    <p class="copyright">© Shankar Hore | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('service_y98m1o7', 'template_exwtdzs', this)
+        .then(function() {
+          console.log('SUCCESS!');
+          document.getElementById('notification').classList.add('show');
+          setTimeout(function() {
+            document.getElementById('notification').classList.remove('show');
+          }, 3000);
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const faqLink = document.getElementById("faq-link");
+      const faqSection = document.querySelector(".faq");
+      const toggleFaqButton = document.getElementById("toggle-faq");
 
-        </li>
-        <li>
-          <a href="#skills">Services</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li>
-          <a href="#home">About Me</a>
-        </li>
-      </ul>
+      const menuIcon = document.querySelector("#menu-icon");
+      const navbar = document.querySelector(".navbar");
+      menuIcon.onclick = () => {
+        menuIcon.classList.toggle("bx-x");
+        navbar.classList.toggle("active");
+      };
 
-      <p class="copyright">© Shankar Hore | All Rights Reserved</p>
-    </footer>
+      const observerOptions = {
+        threshold: 0.1,
+      };
 
-    <script src="script.js"></script>
-    <script type="text/javascript">
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        emailjs.sendForm('service_y98m1o7', 'template_exwtdzs', this)
-          .then(function() {
-            console.log('SUCCESS!');
-            document.getElementById('notification').classList.add('show');
-            setTimeout(function() {
-              document.getElementById('notification').classList.remove('show');
-            }, 3000);
-            document.getElementById('contact-form').reset();
-          }, function(error) {
-            console.log('FAILED...', error);
-          });
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-visible");
+            entry.target.classList.remove("fade-out");
+          } else {
+            entry.target.classList.add("fade-out");
+            entry.target.classList.remove("fade-in-visible");
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach((section) => {
+        observer.observe(section);
       });
-    </script>
-  </body>
+
+      faqLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        faqSection.style.display = "block";
+        setTimeout(() => {
+          faqSection.classList.add("show");
+        }, 10);
+        faqSection.scrollIntoView({ behavior: "smooth" });
+      });
+
+      toggleFaqButton.addEventListener("click", function () {
+        if (!faqSection.classList.contains("show")) {
+          faqSection.style.display = "block";
+          setTimeout(() => {
+            faqSection.classList.add("show");
+          }, 10);
+          toggleFaqButton.textContent = "Hide FAQ";
+        } else {
+          faqSection.classList.remove("show");
+          setTimeout(() => {
+            faqSection.style.display = "none";
+          }, 600); // Matches the duration of the fade-out transition
+          toggleFaqButton.textContent = "Hide FAQ";
+        }
+      });
+
+      const portfolioImages = document.querySelectorAll(".portfolio-img");
+      const imageOverlay = document.getElementById("image-overlay");
+      const overlayImage = document.querySelector(".overlay-img");
+      const closeButton = document.querySelector(".close-btn");
+
+      portfolioImages.forEach((image) => {
+        image.addEventListener("click", function () {
+          overlayImage.src = this.src;
+          imageOverlay.classList.add("active");
+        });
+      });
+
+      closeButton.addEventListener("click", function () {
+        imageOverlay.classList.remove("active");
+      });
+
+      imageOverlay.addEventListener("click", function (event) {
+        if (event.target === imageOverlay) {
+          imageOverlay.classList.remove("active");
+        }
+      });
+
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", function () {
+          const answer = this.nextElementSibling;
+          this.classList.toggle("active");
+          answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+        });
+      });
+
+      const contactForm = document.getElementById("contact-form");
+      const notification = document.getElementById("notification");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        notification.classList.add("show");
+
+        setTimeout(function () {
+          notification.classList.remove("show");
+        }, 3000);
+
+        contactForm.reset();
+      });
+    });
+  </script>
+</body>
 </html>

@@ -22,23 +22,19 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-/* General fade-in and fade-out styles */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
 .fade-in-visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .fade-out {
   opacity: 0.3;
   transition: opacity 0.6s ease-out;
 }
-
 .fade-out-visible {
   opacity: 1;
 }
@@ -48,7 +44,7 @@ body {
   top: 0;
   left: 0;
   padding: 4rem 12%;
-  background: rbga(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
@@ -119,7 +115,6 @@ section {
 .home-img {
   position: relative;
 }
-
 .image-container {
   width: 23vw;
   border-radius: 50%;
@@ -127,13 +122,11 @@ section {
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
 }
-
 .image-container img {
   width: 100%;
   display: block;
   transition: opacity 0.4s ease-in-out;
 }
-
 .image-container::before {
   content: "";
   position: absolute;
@@ -147,14 +140,12 @@ section {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
-
 .image-container:hover::before {
   opacity: 1;
 }
-
 .image-container:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-    0 0 100px var(--main-color);
+  box-shadow: 0 0 25px var (--main-color), 0 0 50px var (--main-color),
+    0 0 100px var (--main-color);
 }
 .social-icons a {
   display: inline-flex;
@@ -270,12 +261,10 @@ section {
     width: calc(100% + 8px);
   }
 }
-
 .education {
   padding: 100px 15px;
   background-color: var(--second-bg-color);
 }
-
 .education h2 {
   font-size: 7rem;
   text-align: center;
@@ -368,13 +357,11 @@ section {
   justify-content: center;
   margin-top: 7rem;
 }
-
 /* Adjust the button style to remove any absolute positioning */
 .education .btn {
   position: relative; /* Ensure this is not absolute */
   margin: 0;
 }
-
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -382,7 +369,7 @@ section {
   background-color: var(--main-color);
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-color);
+  background-color: var (--bg-color);
 }
 .subheading {
   text-align: center;
@@ -390,11 +377,9 @@ section {
   color: var(--text-color);
   margin: 3rem 0 1rem 0; /* Adjust spacing as needed */
 }
-
 .highlight {
   color: #e74d89;
 }
-
 .highlight2 {
   color: #1869ff;
 }
@@ -403,26 +388,22 @@ section {
   background-color: var(--bg-color);
   padding: 50px 0;
 }
-
 .portfolio h2 {
   font-size: 7rem;
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .portfolio-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 items per row */
   gap: 1.5rem; /* Gap between items */
   justify-items: center;
 }
-
 .portfolio-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .portfolio-img,
 .portfolio-video {
   width: 100%;
@@ -431,14 +412,12 @@ section {
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
 .portfolio-img:hover,
 .portfolio-video:hover {
   transform: scale(1.02); /* Slightly reduce the scale effect */
   box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color),
     0 0 25px var(--main-color); /* Reduce the glow effect */
 }
-
 .image-overlay {
   display: none;
   position: fixed;
@@ -451,18 +430,15 @@ section {
   align-items: center;
   z-index: 1000;
 }
-
 .image-overlay.active {
   display: flex;
 }
-
 .overlay-img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
-
 .close-btn {
   position: absolute;
   top: 20px;
@@ -566,7 +542,6 @@ section {
   margin: 1.2rem;
   resize: none;
 }
-
 .notification {
   background-color: var(--main-color);
   color: var(--text-color);
@@ -582,21 +557,26 @@ section {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-
 .notification.show {
   opacity: 1;
   visibility: visible;
 }
-
 .faq {
   display: none;
   opacity: 0;
-  transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out, max-height 0.6s ease-out;
+  overflow: hidden;
 }
 
 .faq.show {
   display: block;
   opacity: 1;
+  max-height: 1000px; /* Adjust as needed to fit content */
+}
+
+.faq.hide {
+  opacity: 0;
+  max-height: 0;
 }
 
 .faq-header {
@@ -659,7 +639,13 @@ section {
 .faq-item p {
   font-size: 1.8rem;
   line-height: 1.6;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
+}
+
+.faq-item p.show {
+  max-height: 1000px; /* Adjust as needed to fit content */
 }
 
 .faq-item:hover {
@@ -667,47 +653,41 @@ section {
   box-shadow: 0 0 20px var(--main-color);
 }
 
+.faq-item.active p {
+  display: block;
+}
 .footer {
   background-color: var(--bg-color);
   padding: 2rem 0;
   width: 100%;
   position: relative;
 }
-
 .footer .social-icons {
   text-align: center;
 }
-
 .footer ul {
   text-align: center;
   font-size: 1.8rem;
   padding: 0;
 }
-
 .footer ul li {
   display: inline-block;
   margin-left: 20px;
 }
-
 .footer ul li a {
   color: white;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
 }
-
 .footer ul li a:hover {
   border-bottom: 3px solid var(--main-color);
 }
-
 .footer .copyright {
   text-align: center;
   margin-top: 40px;
   font-size: 16px;
 }
-
-
-  
- @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   #menu-icon {
     display: block;
   }
@@ -723,7 +703,7 @@ section {
     border-bottom-left-radius: 2rem;
     display: none;
   }
-  .navbar a{
+  .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
@@ -741,58 +721,220 @@ section {
     align-items: center;
     text-align: center;
   }
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 2rem;
+  }
+  .skills-box {
+    height: 500px; /* Adjust height for medium screens */
+  }
+  .skills-info i {
+    font-size: 6rem;
+  }
+  .skills-info h4 {
+    font-size: 2.5rem;
+  }
+  .skills-info p {
+    font-size: 1rem;
+  }
+  .contact form {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 1.5rem;
+  }
+  .skills-box {
+    height: auto; /* Auto height for small screens */
+    padding: 2rem; /* Adjust padding for small screens */
+  }
+  .skills-info {
+    padding: 2rem; /* Adjust padding for small screens */
+  }
+  .skills-info i {
+    font-size: 5rem;
+  }
+  .skills-info h4 {
+    font-size: 2rem;
+  }
+  .skills-info p {
+    font-size: 0.9rem;
+  }
+  .portfolio-items {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+  .header {
+    padding: 2rem 4%;
+  }
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home-content p {
+    font-size: 1.2rem;
+  }
+  .home {
+    gap: 2rem;
+  }
+  .home-content h1 {
+    font-size: 3rem; /* Adjust font size for mobile */
+  }
 
-  
-    .skills-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
-      gap: 2rem;
-    }
+  .home-content h3 {
+    font-size: 2rem; /* Adjust font size for mobile */
+  }
 
-    .skills-box {
-      height: 500px; /* Adjust height for medium screens */
-    }
+  .home-content p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
 
-    .skills-info i {
-      font-size: 6rem;
-    }
+  .text-animation {
+    font-size: 2rem; /* Adjust font size for mobile */
+  }
 
-    .skills-info h4 {
-      font-size: 2.5rem;
-    }
+  .text-animation span::before {
+    animation: words 20s infinite;
+  }
 
-    .skills-info p {
-      font-size: 1rem;
+  .text-animation span::after {
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  }
+
+  @keyframes words {
+    0%,
+    20% {
+      content: "a Graphics Designer!";
     }
-    .contact form{
-      flex-direction: column;
+    21%,
+    40% {
+      content: "a Masters Graduate!";
+    }
+    41%,
+    60% {
+      content: "Tech Gold Accredited!";
+    }
+    61%,
+    80% {
+      content: "a Social Media Manager!";
+    }
+    81%,
+    100% {
+      content: "Looking to start ASAP!";
     }
   }
 
-  @media (max-width: 768px) {
-    .skills-container {
-      grid-template-columns: 1fr; /* 1 column on small screens */
-      gap: 1.5rem;
+  @keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+      width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+      width: calc(100% + 8px);
+    }
+  }
+}
+.contact form .input-box input,
+.contact form textarea {
+  padding: 1.2rem;
+  font-size: 1.4rem;
+}
+.timeline-date,
+.timeline-content h3 {
+  font-size: 1.5rem;
+}
+.timeline-content p {
+  font-size: 1.2rem;
+}
+.faq-header h2 {
+  font-size: 3rem; /* Adjust heading size for mobile */
+}
+
+.faq-item h3 {
+  font-size: 2rem;
+}
+
+.faq-item p {
+  font-size: 1.4rem;
+}
+
+.faq-container {
+  padding-bottom: 2rem; /* Ensure there's enough space at the bottom */
+}
+
+@media (max-width: 480px) {
+  .skills-info i {
+    font-size: 2.5rem;
+  }
+  .skills-info h4 {
+    font-size: 1.5rem;
+  }
+  .skills-info p {
+    font-size: 0.8rem;
+  }
+  .timeline-content {
+    padding: 10px;
+  }
+  .timeline-date,
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+  .timeline-content p {
+    font-size: 1rem;
+  }
+  .text-animation {
+    font-size: 1.8rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+    .faq-header h2 {
+      font-size: 2.5rem;
     }
 
-    .skills-box {
-      height: auto; /* Auto height for small screens */
-      padding: 2rem; /* Adjust padding for small screens */
+    .faq-header button {
+      font-size: 1.2rem;
     }
 
-    .skills-info {
-      padding: 2rem; /* Adjust padding for small screens */
+    .faq-item h3 {
+      font-size: 1.8rem;
     }
 
-    .skills-info i {
-      font-size: 5rem;
+    .faq-item p {
+      font-size: 1.2rem;
     }
 
-    .skills-info h4 {
-      font-size: 2rem;
+    .footer ul li {
+      margin-left: 5px;
     }
 
-    .skills-info p {
-      font-size: 0.9rem;
+    .footer .copyright {
+      font-size: 0.8rem;
     }
+  }
+  .footer ul li {
+    margin-left: 10px;
+  }
+  .footer .copyright {
+    font-size: 1rem;
   }
 }

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcon.classList.toggle("bx-x");
     navbar.classList.toggle("active");
   };
-  // Function to handle fade-in and fade-out for sections
+
   const observerOptions = {
     threshold: 0.1,
   };
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 
-  // Show FAQ section when FAQ link is clicked
   faqLink.addEventListener("click", function (event) {
     event.preventDefault();
     faqSection.style.display = "block";
@@ -41,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     faqSection.scrollIntoView({ behavior: "smooth" });
   });
 
-  // Toggle FAQ section visibility
   toggleFaqButton.addEventListener("click", function () {
     if (!faqSection.classList.contains("show")) {
       faqSection.style.display = "block";
@@ -51,14 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleFaqButton.textContent = "Hide FAQ";
     } else {
       faqSection.classList.remove("show");
+      faqSection.classList.add("hide"); // Add this line
       setTimeout(() => {
         faqSection.style.display = "none";
+        faqSection.classList.remove("hide"); // Remove this line after animation
       }, 600); // Matches the duration of the fade-out transition
-      toggleFaqButton.textContent = "Hide FAQ";
+      toggleFaqButton.textContent = "Show FAQ";
     }
   });
-
-  // Other existing JavaScript code...
 
   const portfolioImages = document.querySelectorAll(".portfolio-img");
   const imageOverlay = document.getElementById("image-overlay");
@@ -76,41 +74,35 @@ document.addEventListener("DOMContentLoaded", function () {
     imageOverlay.classList.remove("active");
   });
 
-  // Close the overlay when clicking outside the image
   imageOverlay.addEventListener("click", function (event) {
     if (event.target === imageOverlay) {
       imageOverlay.classList.remove("active");
     }
   });
 
-  // FAQ collapsible functionality
   const faqQuestions = document.querySelectorAll(".faq-question");
 
   faqQuestions.forEach((question) => {
     question.addEventListener("click", function () {
       const answer = this.nextElementSibling;
-      this.classList.toggle("active");
-      answer.style.display =
-        answer.style.display === "block" ? "none" : "block";
+      const isVisible = answer.classList.contains("show");
+      answer.classList.toggle("show", !isVisible);
+      answer.style.maxHeight = isVisible ? null : answer.scrollHeight + "px";
     });
   });
 
-  // Handle form submission and show notification
   const contactForm = document.getElementById("contact-form");
   const notification = document.getElementById("notification");
 
   contactForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
-    // Show the notification
     notification.classList.add("show");
 
-    // Hide the notification after 3 seconds
     setTimeout(function () {
       notification.classList.remove("show");
     }, 3000);
 
-    // Optionally, you can reset the form fields here if needed
     contactForm.reset();
   });
 });
